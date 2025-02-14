@@ -4,7 +4,7 @@ Project 2 from my web development course from IT School.
 
 ## Demo
 
-The project is deployed on [forecast-5d-weather-app.netlify.app](https://forecast-5d-weather-app.netlify.app/).
+The project is deployed on [meteolive-weather-app.netlify.app](https://meteolive-weather-app.netlify.app/).
 
 ## Main features
 
