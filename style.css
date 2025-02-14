@@ -1,0 +1,129 @@
+/* Customizam Bootstrap */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #fcba03;
+  border-color: #fcba03;
+}
+.btn-secondary:hover {
+  background-color: #ffd04f;
+  box-shadow: 0 12px 16px 0 rgba(252, 186, 3, 0.24),
+    0 17px 50px 0 rgba(252, 186, 3, 0.19);
+}
+
+.text-primary {
+  color: #011425 !important;
+}
+
+.text-secondary {
+  color: #fcba03 !important;
+}
+
+.text-light {
+  color: #eaeaea !important;
+}
+
+.bg-primary {
+  background-color: #1e202c !important;
+}
+
+.bg-secondary {
+  background-image: linear-gradient(white, #fcba03) !important;
+}
+
+.bg-dark {
+  background-color: #1e202c !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.border-secondary {
+  border-color: #fcba03 !important;
+}
+.border-secondary:hover {
+  box-shadow: 0 12px 16px 0 rgba(252, 186, 3, 0.24),
+    0 17px 50px 0 rgba(252, 186, 3, 0.19);
+}
+.dropdown-item:hover {
+  background-color: #fcba03 !important;
+}
+
+/* Font-ul general */
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Header */
+header {
+  height: 10vh;
+}
+header .weather-icon {
+  width: 100px;
+}
+.flex-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Dorim ca toti copii directi din .weather-forecast-box sa aiba aceeasi dimensiune. */
+.weather-forecast-box > * {
+  flex: 1;
+}
+
+/* Adaugam stilizarile de mobile. */
+@media (max-width: 576px) {
+  header .weather-icon {
+    display: none;
+  }
+
+  .current-weather {
+    text-align: center;
+  }
+
+  .current-weather img {
+    width: 75px;
+    height: auto;
+  }
+
+  .weather-forecast-box img {
+    width: 50px;
+    height: auto;
+  }
+
+  .weather-forecast-box .real-feel {
+    display: none;
+  }
+}
+
+/* scroll-to-top button */
+.scroll-to-top {
+  visibility: hidden;
+  color: white;
+  background: #fcba03;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: #fcba03;
+}
